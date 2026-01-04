@@ -4,10 +4,12 @@
   background-color: var(--color-white);
   border-top: 1px solid #e5e7eb;
   margin-top: auto;
-  position: relative !important;
+  position: relative;
   z-index: 5;
   width: 100%;
   flex-shrink: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .footer::before {
@@ -24,6 +26,7 @@
   padding: var(--spacing-2xl) var(--container-padding) var(--spacing-lg);
   max-width: var(--container-max-width);
   margin: 0 auto;
+  width: 100%;
 }
 
 .footerContent {
@@ -178,5 +181,11 @@
 
   .footerBottom {
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerContainer {
+    padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
   }
 }

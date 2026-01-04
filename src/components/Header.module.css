@@ -1,9 +1,9 @@
 @import '../styles/theme.css';
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
   left: 0;
   right: 0;
   z-index: 9999;
@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
   flex-shrink: 0;
+  box-shadow: none;
 }
 
 .header.scrolled {
@@ -261,9 +262,9 @@
 @media (max-width: 1024px) {
   .header {
     height: 64px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0 !important;
     z-index: 9999;
   }
 

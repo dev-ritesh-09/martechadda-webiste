@@ -97,7 +97,7 @@ const HowMarTechAddaWorks = () => {
       stepNumber: 1,
       icon: UserIcon,
       title: 'Create focused profile',
-      description: 'Build a detailed profile showcasing your expertise, experience, and approach',
+      description: 'Build detailed profile showcasing your expertise, experience, and approach',
       label: 'START',
       isFilled: true,
       isGreen: false
@@ -106,15 +106,15 @@ const HowMarTechAddaWorks = () => {
       stepNumber: 2,
       icon: TargetIcon,
       title: 'Get matched by relevance',
-      description: 'Be discovered by businesses based on your capabilities, not advertising spend',
+      description: 'Be discovered based on your capabilities, not advertising spend',
       isFilled: false,
       isGreen: false
     },
     {
       stepNumber: 3,
-      icon: BriefcaseIcon,
+      icon: FiMessageCircle,
       title: 'Have meaningful conversations',
-      description: 'Engage in structured discussions to align on scope and expectations',
+      description: 'Engage structured conversations on scope and expectations',
       label: 'ALIGN',
       isFilled: false,
       isGreen: false
@@ -123,8 +123,7 @@ const HowMarTechAddaWorks = () => {
       stepNumber: 4,
       icon: FiCheckCircle,
       title: 'Engage on aligned projects',
-      description: 'Work on projects where requirements and fit are clear from the start',
-      label: 'DECIDE',
+      description: 'Work on projects where requirements and deliverables are clear from start',
       isFilled: true,
       isGreen: true
     }
