@@ -1,0 +1,1200 @@
+import React from 'react'
+import './ServiceExpert.css'
+
+const ServiceExpert = () => {
+  return (
+    <div className="service-expert">
+      <div className="service-expert-container">
+        
+        {/* Hero Section */}
+        <section className="expert-hero">
+          <h className="main-title"> EXPERT REGISTRATION</h>
+          <p className="hero-subtitle">Create your expert profile in minutes</p>
+          <div className="reassurance">
+            <p><strong>Reassurance (top, small)</strong></p>
+            <p>Join as a marketing professional. No listings to buy. No promotions to run.</p>
+          </div>
+        </section>
+
+        {/* Step  - Account Setup */}
+        <section className="registration-step">
+          <h className="step-title">STEP  € ACCOUNT SETUP (FAST & MINIMAL)</h>
+          <h className="step-headline">Let's start with the basics</h>
+          <div className="fields-list">
+            <p><strong>Fields:</strong></p>
+            <ul>
+              <li>Full Name</li>
+              <li>Work Email</li>
+              <li>Mobile Number</li>
+            </ul>
+            <p className="field-note">(Used only for account access and communication)</p>
+          </div>
+          <div className="cta-section">
+            <button className="primary-cta">¡ Continue</button>
+          </div>
+          <p className="micro-trust-note">We don't sell or share your contact details.</p>
+        </section>
+
+        {/* Step  - Verify & Continue */}
+        <section className="registration-step">
+          <h className="step-title">STEP  € VERIFY & CONTINUE (LOW FRICTION)</h>
+          <h className="step-headline">Verify to continue</h>
+          <div className="verification-section">
+            <p><strong>Verification</strong></p>
+            <ul>
+              <li>OTP via Email or Mobile</li>
+            </ul>
+          </div>
+          <p className="why-this-works"><strong>Why this works (microcopy):</strong></p>
+          <p>This helps us keep MarTechAdda credible and spam-free.</p>
+          <div className="cta-section">
+            <button className="primary-cta">¡ Verify & Continue</button>
+          </div>
+        </section>
+
+        {/* Step  - Confirm Your Role */}
+        <section className="registration-step">
+          <h className="step-title">STEP  € CONFIRM YOUR ROLE</h>
+          <h className="step-headline">You're joining as a Marketing Expert</h>
+          <div className="context-confirmation">
+            <p><strong>Context Confirmation (auto-filled)</strong></p>
+            <ul>
+              <li>Selected primary category: Branding / Strategy / Advertising / Collateral</li>
+              <li>You can add more categories later</li>
+            </ul>
+          </div>
+          <div className="cta-section">
+            <button className="primary-cta">¡ Start Building Your Profile</button>
+          </div>
+        </section>
+
+        {/* Psychological Closing */}
+        <section className="psychological-closing">
+          <p><strong>PSYCHOLOGICAL CLOSING (BOTTOM, SMALL)</strong></p>
+          <p>You're creating a professional profile € not signing a contract.</p>
+          <p>You stay in control at every step.</p>
+          <p>Once your account is created, we'll guide you step-by-step to build your expert profile.</p>
+        </section>
+
+        {/* Expert Journey */}
+        <section className="expert-journey">
+          <h className="section-title">EXPERT JOURNEY (HIGH-LEVEL)</h>
+          <div className="journey-flow">
+            <p>Register †’ Build Profile †’ Verify †’ Activate Profile</p>
+            <p className="arrow-down">†“</p>
+            <p>Engagement Workspace (Unlocked)</p>
+          </div>
+        </section>
+
+        {/* Expert Onboarding Hero Section */}
+        <section className="onboarding-hero">
+          <h className="section-title"> EXPERT ONBOARDING JOURNEY</h>
+          <h className="hero-title"> Expert Onboarding Hero Section (TOP OF REGISTRATION)</h>
+          <h className="sub-title">Title</h>
+          <p>Join MarTechAdda as a Marketing Expert</p>
+          <h className="sub-title">Subtext</h>
+          <p>Create a verified profile to get discovered for your expertise € not promotions.</p>
+          <div className="trust-strip">
+            <p><strong>Trust Strip (small icons/text)</strong></p>
+            <ul>
+              <li> No paid listings</li>
+              <li> No promotions</li>
+              <li> Deposit-protected engagements</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Stage  - Create Profile */}
+        <section className="onboarding-stage">
+          <h className="stage-title"> STAGE  € Create Profile (Fast Onboarding)</h>
+          <p className="stage-purpose"><strong>Purpose:</strong> Build trust before asking for compliance.</p>
+          <div className="profile-details">
+            <h>Profile Details</h>
+            <ol>
+              <li>Business Name</li>
+              <li>Alias / Brand Name (if any)</li>
+              <li>Business Role
+                <ul>
+                  <li>Freelancer</li>
+                  <li>Consultant</li>
+                  <li>Agency</li>
+                  <li>Company</li>
+                </ul>
+              </li>
+              <li>Contact Details
+                <ul>
+                  <li>Primary Email & Mobile</li>
+                  <li>Secondary Email & Mobile (optional)</li>
+                </ul>
+              </li>
+              <li>Logo & Website</li>
+              <li>Quick Location
+                <ul>
+                  <li>Country</li>
+                  <li>City</li>
+                </ul>
+              </li>
+              <li>About / Summary</li>
+              <li>Professional Background (Contextual)
+                <ul>
+                  <li>Freelancer / Consultant: †’ Years of professional experience</li>
+                  <li>Agency / Company: †’ Business background & core focus</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div className="cta-section">
+            <button className="primary-cta">¡ Save & Continue € Build Service Profile</button>
+          </div>
+        </section>
+
+        {/* Stage  - Your Expertise */}
+        <section className="onboarding-stage">
+          <h className="stage-title"> STAGE  € Your Expertise</h>
+          <p className="stage-purpose"><strong>Purpose:</strong> Allow providers to define everything they offer once, without future rework.</p>
+          
+          <div className="expertise-section">
+            <h>A. What You Do (Capability Core): (All In one Go)</h>
+            
+            <div className="expertise-item">
+              <h> Core Service Categories</h>
+              <p><strong>Label:</strong> Select Your Core Service Categories</p>
+              <p><strong>Type:</strong> Select with one. Add more anytime.</p>
+              <p><strong>Options:</strong></p>
+              <ul>
+                <li> Branding</li>
+                <li>“ˆ Strategic Marketing</li>
+                <li>“¢ Advertising</li>
+                <li>š™ Marketing Collateral</li>
+              </ul>
+              <p className="tooltip"><strong>Tooltip:</strong> "Choose the main marketing services you actively provide. This helps clients quickly understand your primary expertise."</p>
+            </div>
+
+            <div className="expertise-item">
+              <h> Sub-Services (Deep Taxonomy)</h>
+              <p><strong>Label:</strong> Add Your Detailed Sub-Services (Refer taxonomy file respective tab)</p>
+              <p><strong>Type:</strong> Multi-select (nested)</p>
+              <p><strong>Approach / Primary Filter | Sub Filter / Format | Category | Sub Categories</strong></p>
+              <p className="tooltip"><strong>Tooltip:</strong> "Select all specific services you offer within each category. This improves precise matching with client requirements."</p>
+            </div>
+
+            <div className="expertise-item">
+              <h>.¹ Service Review & Confirmation</h>
+              <p><strong>Title:</strong> Have you added all the services you offer?</p>
+              <p><strong>Buttons:</strong></p>
+              <ul>
+                <li>• Add another service</li>
+                <li>Continue</li>
+              </ul>
+              <p className="tooltip"><strong>Tooltip:</strong> This ensures you're discoverable for all services you offer.</p>
+            </div>
+          </div>
+
+          <div className="expertise-section">
+            <h>B. Who You Serve (Market Fit):</h>
+            <p>The following details apply across all selected services.</p>
+            
+            <div className="expertise-item">
+              <h>. Industry Sectors</h>
+              <p><strong>Label:</strong> Industries You Serve</p>
+              <p><strong>Type:</strong> Multi-select</p>
+              <p><strong>Options:</strong> primary, secondary, Tertiary, Quaternary</p>
+              <p className="tooltip"><strong>Tooltip:</strong> "Select the industries where you have proven experience delivering marketing work."</p>
+            </div>
+
+            <div className="expertise-item">
+              <h>. Industry Sub-Sectors (Deep Taxonomy)</h>
+              <p><strong>Label:</strong> Sub-Industry Specializations (Refer taxonomy file respective tab)</p>
+              <p><strong>Type:</strong> Multi-select (nested)</p>
+              <p className="tooltip"><strong>Tooltip:</strong> "Choose niche segments you understand deeply. This helps clients from specialized industries find you faster."</p>
+            </div>
+
+            <div className="expertise-item">
+              <h>. Client Engagement Types (Business Interaction Models)</h>
+              <p><strong>Label:</strong> Client Business Engagement Types</p>
+              <p><strong>Type:</strong> Multi-select</p>
+              <p><strong>Options:</strong> BB, BC, BBC, DC, BG, BCB, CB, CC, GB, GC</p>
+              <p className="tooltip"><strong>Tooltip:</strong> "Select the business models your clients typically operate under. This ensures compatibility with buyer workflows."</p>
+            </div>
+
+            <div className="expertise-item">
+              <h>. Business Types Served (Operational/Channel Client Types)</h>
+              <p><strong>Label:</strong> Types of Businesses You Serve:</p>
+              <p><strong>Type:</strong> Multi-select with icons</p>
+              <p><strong>Options:</strong> Distributor, Factory, Outlet, Manufacturer, Reseller, Retailer, Services, Wholesaler, other.</p>
+              <p className="tooltip"><strong>Tooltip:</strong> "Choose the operational structure of the clients you commonly support."</p>
+            </div>
+
+            <div className="expertise-item">
+              <h>. Client Scale</h>
+              <p><strong>Label:</strong> Client Size You Serve:</p>
+              <p><strong>Type:</strong> Multi-select</p>
+              <p><strong>Options:</strong> Startups, SMBs, Enterprises, Global brands, Other.</p>
+              <p className="tooltip"><strong>Tooltip:</strong> "Choose the typical size of clients you work with."</p>
+            </div>
+          </div>
+
+          <div className="expertise-section">
+            <h>C. How You Work (Commercial Fit):</h>
+            
+            <div className="expertise-item">
+              <h>. Engagement Models</h>
+              <p><strong>Label:</strong> Your Service Delivery Models:</p>
+              <p><strong>Type:</strong> Multi-select</p>
+              <p><strong>Options:</strong> Retainers, project-based, SLA-driven, Subscription, on-demand tasks, To Be Discussed.</p>
+              <p className="tooltip"><strong>Tooltip:</strong> "Select how you typically work with clients"</p>
+            </div>
+
+            <div className="expertise-item">
+              <h>. Delivery Channels</h>
+              <p><strong>Label:</strong> Delivery Channels You Support:</p>
+              <p><strong>Type:</strong> Multi-select</p>
+              <p><strong>Options:</strong> online, offline, hybrid, remote, On-site, To Be Discussed.</p>
+              <p className="tooltip"><strong>Tooltip:</strong> "Select how you deliver your services depending on client needs."</p>
+            </div>
+
+            <div className="expertise-item">
+              <h>. Pricing Models</h>
+              <p><strong>Label:</strong> Your Pricing Structure:</p>
+              <p><strong>Type:</strong> Multi-select</p>
+              <p><strong>Options:</strong> Fixed, Hourly, Subscription, Tiered, To Be Discussed.</p>
+              <p className="tooltip"><strong>Tooltip:</strong> "Select the pricing models you support. This improves transparency and reduces unqualified leads."</p>
+            </div>
+
+            <div className="expertise-item">
+              <h>. Preferred Delivery Speed</h>
+              <p><strong>Label:</strong> Preferred Delivery Speed</p>
+              <p><strong>Type:</strong> Multi-select or slider</p>
+              <p><strong>Options (with meaning):</strong></p>
+              <ul>
+                <li>Standard (€“0 days)</li>
+                <li>Fast-track (€“ days)</li>
+                <li>Urgent (€“ hours)</li>
+                <li>To Be Discussed</li>
+              </ul>
+              <p className="tooltip"><strong>Tooltip:</strong> "Select your typical delivery speeds. Actual timelines may vary by service type."</p>
+            </div>
+          </div>
+
+          <div className="expertise-section">
+            <h>D. Communication & Availability:</h>
+            
+            <div className="expertise-item">
+              <h>. Languages</h>
+              <p><strong>Label:</strong> Languages You Support:</p>
+              <p><strong>Type:</strong> Multi-select</p>
+              <p><strong>Options:</strong> Hindi, English, Marathi, Gujarati, Other</p>
+              <p className="tooltip"><strong>Tooltip:</strong> "Choose the languages you can communicate and deliver work in."</p>
+            </div>
+
+            <div className="expertise-item">
+              <h>. Work schedule & Availability (Optional)</h>
+              <p><strong>Label:</strong> Set Your Work Schedule & Availability</p>
+              <p><strong>Includes:</strong></p>
+              <ol>
+                <li>Weekly Working Hours</li>
+                <li>Days Off / Weekly Offs</li>
+                <li>Bookings Availability calendar</li>
+                <li>Toggle: "Available for Instant Booking"</li>
+              </ol>
+              <p><strong>Type:</strong> Calendar picker + weekly hours selector</p>
+              <p className="tooltip"><strong>Tooltip:</strong> This helps clients schedule discussions or calls at the right time."</p>
+            </div>
+          </div>
+
+          <div className="cta-section">
+            <button className="primary-cta">¡ Continue € Add Portfolio & Proof of Work</button>
+          </div>
+        </section>
+
+        {/* Stage  - Portfolio & Credibility */}
+        <section className="onboarding-stage">
+          <h className="stage-title">“ STAGE  € Portfolio & Credibility</h>
+          
+          <div className="portfolio-section">
+            <h>. Portfolio Uploads (Max: - samples)</h>
+            <p><strong>Upload Format Options:</strong></p>
+            <ul>
+              <li>Images</li>
+              <li>Videos (URL link only)</li>
+              <li>PDFs</li>
+              <li>URLs (Behance, Dribbble, YouTube, Website, Google Drive, etc)</li>
+            </ul>
+          </div>
+
+          <div className="portfolio-section">
+            <h>. Certifications & Awards</h>
+            <p><strong>Field Structure:</strong></p>
+            <ul>
+              <li>Title (Text)</li>
+              <li>Upload file (Optional)</li>
+              <li>Verification URL (Optional)</li>
+            </ul>
+          </div>
+
+          <div className="portfolio-section">
+            <h>. Tools & Technologies:</h>
+            <p><strong>Type:</strong> Multi-select (pills)</p>
+            <p><strong>Tools Included:</strong> Canva, Adobe Photoshop, Adobe Illustrator, Figma, HubSpot, Zoho CRM, Salesforce, Google Ads, Meta Ads, LinkedIn Ads, Google Analytics (GA), Semrush, Hotjar, Mailchimp, Klaviyo, Zapier, WordPress, Webflow, Shopify, Wix, Other</p>
+          </div>
+
+          <div className="portfolio-section">
+            <h>. Key Team Members (optional, max )</h>
+            <p><strong>Fields:</strong></p>
+            <ul>
+              <li>Name</li>
+              <li>Role</li>
+              <li>Expertise (Multi -select)</li>
+              <li>Experience years</li>
+              <li>Profile photo (optional)</li>
+            </ul>
+          </div>
+
+          <div className="portfolio-section">
+            <h>. Testimonials (optional)</h>
+            <p><strong>A.</strong> Upload screenshots</p>
+            <p><strong>B.</strong> Social review/rating Link: Instagram | Facebook | LinkedIn | X | YouTube | Trustpilot |</p>
+          </div>
+
+          <div className="cta-section">
+            <button className="primary-cta">¡ Continue € Complete Compliance Verification</button>
+          </div>
+        </section>
+
+        {/* Stage  - Legal Identity & Compliance */}
+        <section className="onboarding-stage">
+          <h className="stage-title"> STAGE  € Legal Identity & Compliance (MVP-Ready Structure)</h>
+          <p className="stage-purpose">By this stage, the user is already invested € so compliance feels natural, not heavy.</p>
+          
+          <div className="compliance-section">
+            <h> Entity Type (Simple Select):</h>
+            <p>Individual, Proprietorship, One person company, Partnership, Limited Liability Partnership, Private Limited Company, Public Limited</p>
+            <ul>
+              <li> Helps decide which documents to show next</li>
+              <li> Drives conditional fields</li>
+            </ul>
+            <p><strong>Sub-Entity Type:</strong> Freelancer, Consultant, Agency, Company</p>
+          </div>
+
+          <div className="compliance-section">
+            <h> Role-Based Document Checklist (Auto-Generated Per Entity)</h>
+            <p><strong>“‘ Mandatory Proofs for Each Entity Type (India)</strong></p>
+            <div className="document-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Entity Type</th>
+                    <th>Mandatory Proof of Legal Identity</th>
+                    <th>Mandatory Proof of Tax Compliance</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Individual</td>
+                    <td>PAN Card</td>
+                    <td>GST Registration (only if turnover crosses threshold)</td>
+                  </tr>
+                  <tr>
+                    <td>Proprietorship</td>
+                    <td>Proprietor's PAN Card</td>
+                    <td>GST Registration Certificate</td>
+                  </tr>
+                  <tr>
+                    <td>One Person Company (OPC)</td>
+                    <td>Certificate of Incorporation (CIN)</td>
+                    <td>Company PAN + GST Registration Certificate</td>
+                  </tr>
+                  <tr>
+                    <td>Partnership Firm</td>
+                    <td>Partnership Deed</td>
+                    <td>Firm PAN + GST Registration Certificate</td>
+                  </tr>
+                  <tr>
+                    <td>Limited Liability Partnership (LLP)</td>
+                    <td>LLP Incorporation Certificate (LLPIN)</td>
+                    <td>LLP PAN + GST Registration Certificate</td>
+                  </tr>
+                  <tr>
+                    <td>Private Limited Company</td>
+                    <td>Certificate of Incorporation (CIN)</td>
+                    <td>Company PAN + GST Registration Certificate</td>
+                  </tr>
+                  <tr>
+                    <td>Public Limited Company</td>
+                    <td>Certificate of Incorporation (CIN)</td>
+                    <td>Company PAN + GST Registration Certificate</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul>
+              <li> Checklist auto-adjusts based on entity type</li>
+            </ul>
+          </div>
+
+          <div className="compliance-section">
+            <h> Document Upload Fields</h>
+            <p><strong>Upload formats supported:</strong> PDF, JPG, PNG</p>
+            <p><strong>Fields:</strong></p>
+            <ul>
+              <li>PAN</li>
+              <li>GST</li>
+              <li>Certificate of Incorporation (CIN)</li>
+              <li>LLP Incorporation Certificate (LLPIN)</li>
+            </ul>
+          </div>
+
+          <div className="compliance-section">
+            <h> Registered Business Address</h>
+            <p><strong>Fields:</strong></p>
+            <ul>
+              <li>Address Line </li>
+              <li>Address Line  (Optional)</li>
+              <li>City</li>
+              <li>State</li>
+              <li>Pin code</li>
+              <li>Country</li>
+              <li>Upload Address Proof (Utility Bill / Rent Agreement / Letterhead)</li>
+            </ul>
+          </div>
+
+          <div className="compliance-section">
+            <h> Optional Compliance Badges</h>
+            <ul>
+              <li>Startup India Recognition</li>
+              <li>MSME Registration</li>
+              <li>ISO Certifications</li>
+            </ul>
+            <p> Adds credibility</p>
+          </div>
+
+          <div className="compliance-section">
+            <h>. Tax & Invoicing Preference (clickable)</h>
+            <ul>
+              <li>GST Applicable ((I will raise GST invoice)</li>
+              <li>GST Not Applicable</li>
+              <li>Reverse Charge Mechanism (RCM)</li>
+              <li>To be Discussed</li>
+            </ul>
+            <p> Helpful for invoicing stage</p>
+          </div>
+
+          <div className="compliance-section">
+            <h>. Bank Details:</h>
+            <p><strong>Main Label</strong></p>
+            <p>Bank Details (Required for Secure Payouts)</p>
+            <p><strong>Subtext</strong></p>
+            <p>"Add your bank details to enable secure payouts for your completed projects. This information is encrypted and never shared."</p>
+            
+            <div className="bank-details">
+              <h>A. Bank Account Details</h>
+              <ul>
+                <li>Account Holder Name</li>
+                <li>Bank Name</li>
+                <li>Branch Name</li>
+                <li>Account Number</li>
+                <li>IFSC Code</li>
+                <li>Account Type (Savings / Current)</li>
+              </ul>
+              <p><strong>Optional Upload:</strong></p>
+              <ul>
+                <li>Cancelled Cheque OR Passbook Photo OR Bank Statement (first page)</li>
+              </ul>
+              
+              <h>B. UPI ID (Optional)</h>
+              <p>UPI ID (yourname@bank / upi / paytm / gpay)</p>
+              <p>"Payouts are subject to milestone approval and applicable platform charges."</p>
+            </div>
+          </div>
+
+          <div className="compliance-section">
+            <h>. Consent & Agreements (KYC + Terms Acceptance)</h>
+            <p><strong>Step Title</strong></p>
+            <p>Review & Activate Your Profile</p>
+            <p><strong>Link to:</strong> Summary refer Attachment name</p>
+            <p>"“ CONSENT AGREEMENT _SERVICE EXPERT"</p>
+            <p><strong>Checkbox (mandatory)</strong></p>
+            <p>˜ I have read and agree to MarTechAdda's platform terms and onboarding declarations.</p>
+          </div>
+
+          <div className="cta-section">
+            <button className="primary-cta">¡ Submit for Verification & Activate Profile</button>
+          </div>
+
+          <div className="compliance-section">
+            <h>9. Confirmation Screen (Immediately After Submission)</h>
+            <p><strong>Title:</strong></p>
+            <p> Profile Submitted for Verification</p>
+            <p><strong>Message:</strong></p>
+            <p>Your Expert ID has been successfully generated.</p>
+            <p><strong>Expert ID Display</strong></p>
+            <p>† Expert ID: MTA-EXP-000</p>
+            <p>Use this ID for support or future reference.</p>
+            <p>(Pending activation)</p>
+            <p><strong>Subtext:</strong></p>
+            <p>Our team is reviewing your profile and documents.</p>
+            <p>You'll be notified within €“ hours once your profile is approved and activated.</p>
+            <p>After activation, businesses can discover and connect with you on MarTechAdda.</p>
+            <p><strong>Primary Button</strong></p>
+            <button className="primary-cta">¡ Go to Dashboard</button>
+          </div>
+        </section>
+
+        {/* Core Principle - Collaboration Tools */}
+        <section className="principle-section">
+          <h className="section-title">‘ CORE PRINCIPLE (IMPORTANT)</h>
+          <p>Collaboration tools should unlock after credibility is established € not during onboarding.</p>
+          <p><strong>So:</strong></p>
+          <ul>
+            <li> NOT inside registration</li>
+            <li> NOT inside Stage  expertise</li>
+            <li> YES inside Post-Activation Workspace</li>
+          </ul>
+        </section>
+
+        {/* Engagement Workspace */}
+        <section className="workspace-section">
+          <h className="section-title"> WHERE THESE FEATURES SHOULD LIVE</h>
+          <h className="sub-section-title"> AFTER PROFILE ACTIVATION</h>
+          <p><strong>Location:</strong> Expert Dashboard †’ Engagement Workspace</p>
+          <p>This is critical for:</p>
+          <ul>
+            <li>Trust</li>
+            <li>Legal safety</li>
+            <li>Payment readiness</li>
+            <li>Reduced misuse</li>
+          </ul>
+
+          <h className="sub-section-title"> ENGAGEMENT WORKSPACE</h>
+          <p>Visible only AFTER:</p>
+          <ul>
+            <li> Profile approved</li>
+            <li> Expert ID activated</li>
+          </ul>
+
+          <div className="feature-section">
+            <h> CALL SCHEDULING (JITSI MEET INTEGRATION)</h>
+            <p><strong>Feature Name:</strong> Schedule a Discussion</p>
+            <p>Not "Book a call"</p>
+            <p>Not "Sales call"</p>
+            <p>This reinforces alignment, not pitching.</p>
+            
+            <h>How it Works (Lean)</h>
+            <p><strong>For Businesses</strong></p>
+            <ul>
+              <li>Click "Request Discussion"</li>
+              <li>Select:
+                <ul>
+                  <li>Purpose (Requirement discussion / Clarification / Alignment)</li>
+                  <li>Preferred date & time</li>
+                </ul>
+              </li>
+              <li>Agenda field (mandatory, short)</li>
+            </ul>
+            <p><strong>For Experts</strong></p>
+            <ul>
+              <li>Accept / Reschedule / Decline</li>
+              <li>Auto-generate Jitsi Meet link</li>
+              <li>Calendar sync (Google / Outlook €“ later)</li>
+            </ul>
+            <ul>
+              <li> No external app</li>
+              <li> No contact sharing</li>
+            </ul>
+
+            <h>Jitsi-Specific Guardrails</h>
+            <ul>
+              <li>Auto-expire meeting links</li>
+              <li>Unique link per session</li>
+              <li>No anonymous joins</li>
+              <li>Meeting accessible only from platform</li>
+            </ul>
+            <p>This protects privacy + platform control.</p>
+          </div>
+
+          <div className="feature-section">
+            <h>¾ INBUILT QUOTATION CREATOR (MILESTONE SUMMARY-BASED)</h>
+            <p><strong>Feature Name:</strong> Create Quotation</p>
+            
+            <h>“ WHEN IT UNLOCKS (UNCHANGED € CORRECT)</h>
+            <p>Unlocked only after:</p>
+            <ul>
+              <li> Discussion marked Completed</li>
+              <li> OR Business clicks Request Quotation</li>
+            </ul>
+            <p>Flow stays clean: Conversation †’ Clarity †’ Quotation</p>
+          </div>
+        </section>
+
+        {/* Quotation Creator Structure */}
+        <section className="quotation-section">
+          <h className="section-title"> QUOTATION CREATOR € STRUCTURE</h>
+          
+          <div className="quotation-item">
+            <h> CLIENT & CONTEXT (AUTO-FILLED | READ-ONLY)</h>
+            <p><strong>Section Label:</strong> Client Context</p>
+            <ul>
+              <li>Business Name</li>
+              <li>Service Category</li>
+              <li>Discussion Reference ID</li>
+              <li>Expert ID (internal)</li>
+              <li>Date of Quotation</li>
+            </ul>
+            <p>This creates traceability and audit safety.</p>
+          </div>
+
+          <div className="quotation-item">
+            <h> PLACE OF SUPPLY & TAX CONTEXT (NEW € VERY IMPORTANT)</h>
+            <p><strong>Section Label:</strong> Supply & Tax Details</p>
+            <p><strong>Fields:</strong></p>
+            <ul>
+              <li>Place of Supply (State & Country) (mandatory)</li>
+              <li>Client GST Status:
+                <ul>
+                  <li>GST Registered</li>
+                  <li>GST Not Registered</li>
+                </ul>
+              </li>
+              <li>Expert GST Status (auto from onboarding)</li>
+            </ul>
+          </div>
+
+          <div className="quotation-item">
+            <h> SCOPE OF WORK € MILESTONE TABLE (CORE UPGRADE)</h>
+            <p><strong>Section Label:</strong> Scope of Work & Milestones</p>
+            <p><strong>Table-Based UI (Excel-like)</strong></p>
+            <div className="milestone-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Milestone</th>
+                    <th>Scope / Deliverables</th>
+                    <th>Additional details</th>
+                    <th>Timeline</th>
+                    <th>Deposit %</th>
+                    <th>Deposit Amount (‚¹)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>M</td>
+                    <td>Strategy & Planning</td>
+                    <td>N.A</td>
+                    <td> days</td>
+                    <td>0%</td>
+                    <td>Auto calculate</td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td>Execution Phase </td>
+                    <td></td>
+                    <td> days</td>
+                    <td>0%</td>
+                    <td>Auto</td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td>Execution Phase </td>
+                    <td></td>
+                    <td>0 days</td>
+                    <td>0%</td>
+                    <td>Auto</td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td>Final Delivery & Handover</td>
+                    <td></td>
+                    <td>0 days</td>
+                    <td>0%</td>
+                    <td>Auto</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><strong>Table Capabilities</strong></p>
+            <ul>
+              <li>• Add row / columns (milestone)</li>
+              <li> Edit cells inline</li>
+              <li>—‘ Remove milestone</li>
+              <li>% auto-validates to 00% total</li>
+              <li>Amount auto-calculated from total value</li>
+            </ul>
+            <p>‘ This directly aligns scope †’ deposit †’ release</p>
+          </div>
+
+          <div className="quotation-item">
+            <h> COMMERCIAL SUMMARY (DEPOSIT-BASED, NOT PAYMENT)</h>
+            <p><strong>Section Label:</strong> Commercials & Deposit Structure</p>
+            <p><strong>Fields:</strong></p>
+            <ul>
+              <li>Total Engagement Value (‚¹)</li>
+              <li>Deposit Model:
+                <ul>
+                  <li>Milestone-based (default & recommended)</li>
+                </ul>
+              </li>
+              <li>Total Deposit Payable: 00%</li>
+              <li>Deposit Holder:
+                <ul>
+                  <li>MarTechAdda (via its designated operating account)</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Microcopy (important):</strong></p>
+            <p>Deposits are managed by MarTechAdda and released to the expert only upon milestone approval.</p>
+          </div>
+
+          <div className="quotation-item">
+            <h> TIMELINES & DELIVERY TERMS (REFINED)</h>
+            <p><strong>Section Label:</strong> Timelines & Delivery</p>
+            <ul>
+              <li>Engagement Start Date €“ calendar selection</li>
+              <li>Estimated End Date €“ calendar selection</li>
+              <li>Grace Period (optional) €“ in no. of days</li>
+              <li>Dependencies / Assumptions (optional)</li>
+            </ul>
+          </div>
+
+          <div className="quotation-item">
+            <h> EXCLUSIONS & ASSUMPTIONS (RISK REDUCTION)</h>
+            <p><strong>Section Label:</strong> What's Not Included</p>
+            <ul>
+              <li>Out-of-scope items</li>
+              <li>Third-party costs</li>
+              <li>Change request handling</li>
+              <li>Other (Free Text)</li>
+            </ul>
+            <p>This single section saves 90% of disputes later.</p>
+          </div>
+
+          <div className="quotation-item">
+            <h> VALIDITY & SPECIAL NOTES</h>
+            <p><strong>Section Label:</strong> Validity & Notes</p>
+            <ul>
+              <li>Quotation Valid Until: days (select from calendar)</li>
+              <li>Additional Notes (free text)</li>
+            </ul>
+          </div>
+
+          <div className="quotation-item">
+            <h> ACCEPTANCE & NEXT STEPS (AUTO-GENERATED)</h>
+            <p><strong>Acceptance Clause (Read-only):</strong></p>
+            <p>By accepting this quotation, the client agrees to deposit the defined amount with MarTechAdda. Deposits will be released to the expert upon milestone completion and approval by the client, as per the agreed scope.</p>
+            
+            <p><strong>¢ ACTIONS AVAILABLE TO BUSINESS</strong></p>
+            <ul>
+              <li> Accept & Deposit</li>
+              <li>„ Request Revision</li>
+              <li> Decline</li>
+            </ul>
+            <p>Deposits remain under your control and are released only after your approval.</p>
+          </div>
+
+          <div className="quotation-item">
+            <h>“ PLATFORM ROLE & IMPORTANT NOTES (display on every quotation)</h>
+            <p><strong>Quotation Scope</strong></p>
+            <p>This quotation defines scope, milestones, and deposit structure only.</p>
+            <p>Invoices are raised directly between the service seeker and service provider.</p>
+            
+            <p><strong>MarTechAdda's Role</strong></p>
+            <p>MarTechAdda is a neutral facilitator. We do not provide services, raise invoices, or assume tax obligations.</p>
+            
+            <p><strong>Deposit Handling</strong></p>
+            <p>Deposits are collected and held by MarTechAdda and released to the service provider only after milestone approval by the service seeker.</p>
+            
+            <p><strong>Post-Hiring Responsibility</strong></p>
+            <p>All execution, delivery, and service communication remain solely between both parties after hiring.</p>
+            
+            <p><strong>Mandatory Communication Rule</strong></p>
+            <p>For milestone approval, revision, rejection, or invoice-related communication, both parties must CC hello@martechadda.com to enable deposit release.</p>
+            
+            <p><strong>Milestone Disclaimer</strong></p>
+            <p>Milestones are a reference for deposit release only.</p>
+            <p>MarTechAdda does not track work progress, manage tasks, or judge scope disputes.</p>
+          </div>
+        </section>
+
+        {/* After Accept & Deposit Flow */}
+        <section className="deposit-flow-section">
+          <h className="section-title"> WHAT HAPPENS AFTER "ACCEPT & DEPOSIT"</h>
+          <p className="principle-text"><strong> CORE PRINCIPLE</strong></p>
+          <p>Money moves only after clarity. Control stays with the seeker. Release is milestone-led.</p>
+          
+          <div className="flow-step">
+            <h>STEP  € ACCEPTANCE CONFIRMATION (INSTANT)</h>
+            <p><strong>System Action</strong></p>
+            <ul>
+              <li>Quotation status changes to: Accepted</li>
+              <li>Engagement status created: Active (Pending Deposit)</li>
+            </ul>
+            <p><strong>User Screen (Service Seeker)</strong></p>
+            <p><strong>Title:</strong>  Quotation Accepted</p>
+            <p><strong>Message:</strong> You're almost ready to begin.</p>
+            <p>To proceed, deposit the agreed amount with MarTechAdda.</p>
+            <p><strong>Primary CTA:</strong> ¡ Proceed to Deposit</p>
+          </div>
+
+          <div className="flow-step">
+            <h>STEP  € DEPOSIT COLLECTION (CONTROLLED)</h>
+            <p><strong>Deposit Summary (Read-only)</strong></p>
+            <ul>
+              <li>Total Engagement Value</li>
+              <li>Milestone breakdown (table view)</li>
+              <li>Total Deposit Required: 00%</li>
+              <li>Deposit Holder: MarTechAdda (via designated account)</li>
+            </ul>
+            <p><strong>Payment Options (MVP)</strong></p>
+            <ul>
+              <li>UPI</li>
+              <li>Net Banking</li>
+              <li>Bank Transfer (NEFT/RTGS)</li>
+            </ul>
+            <p>š Language everywhere says Deposit, not Payment.</p>
+            
+            <p><strong>On Successful Deposit</strong></p>
+            <ul>
+              <li>Deposit status: Received</li>
+              <li>Funds reflected in MarTechAdda's system ledger</li>
+              <li>Timestamp + reference ID generated</li>
+            </ul>
+            <p>No milestone activation yet.</p>
+          </div>
+
+          <div className="flow-step">
+            <h>STEP  € ENGAGEMENT ACTIVATED</h>
+            <p><strong>System Status</strong></p>
+            <ul>
+              <li>Engagement status †’ Active</li>
+              <li>Quotation status †’ Accepted</li>
+              <li>Deposit †’ Held</li>
+            </ul>
+            <p><strong>What Is Enabled</strong></p>
+            <ul>
+              <li> Communication</li>
+              <li> Call scheduling (Jitsi)</li>
+              <li> Reference access to:
+                <ul>
+                  <li>Quotation</li>
+                  <li>Milestone table (read-only reference)</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div className="flow-step">
+            <h>STEP  € MILESTONE COMPLETION REQUEST (MANUAL TRIGGER)</h>
+            <p>When expert believes a milestone is complete:</p>
+            <p><strong>Expert Action</strong></p>
+            <p>¡ Click Request Deposit Release (select milestone from dropdown)</p>
+            <p>This request does not guarantee release. Approval rests with the client.</p>
+            <p><strong>Required Inputs</strong></p>
+            <ul>
+              <li>Milestone reference (M / M / etc.)</li>
+              <li>Completion note (short text)</li>
+              <li>Optional attachment / link</li>
+            </ul>
+            <p>š This is not "marking task complete"</p>
+            <p>It is requesting deposit release for a milestone</p>
+          </div>
+
+          <div className="flow-step">
+            <h>STEP  € SERVICE SEEKER DECISION</h>
+            <p>Service seeker sees:</p>
+            <p><strong>Milestone Reference</strong></p>
+            <ul>
+              <li>Scope (from table)</li>
+              <li>Agreed %</li>
+              <li>Deposit amount tied to it</li>
+            </ul>
+            <p><strong>Options</strong></p>
+            <ul>
+              <li> Approve & Release Deposit</li>
+              <li>„ Request Revision</li>
+              <li> Flag an Issue</li>
+            </ul>
+            <p>No tracking. No progress indicators.</p>
+          </div>
+
+          <div className="flow-step">
+            <h>STEP  € DEPOSIT RELEASE (CORE FUNCTION)</h>
+            <p><strong>If Approved</strong></p>
+            <ul>
+              <li>Corresponding % released</li>
+              <li>Remaining deposit continues to be held</li>
+            </ul>
+            <p><strong>If Revision</strong></p>
+            <ul>
+              <li>No release</li>
+              <li>Expert notified</li>
+            </ul>
+            <p><strong>If Concern</strong></p>
+            <ul>
+              <li>Deposit on hold</li>
+              <li>Admin visibility enabled</li>
+            </ul>
+          </div>
+
+          <div className="flow-step">
+            <h>STEP  € REPEAT UNTIL FINAL MILESTONE</h>
+            <ul>
+              <li>Each release is explicitly triggered</li>
+              <li>Nothing happens automatically</li>
+              <li>Platform remains neutral</li>
+            </ul>
+          </div>
+
+          <div className="flow-step">
+            <h>STEP  € ENGAGEMENT COMPLETION</h>
+            <p>After final milestone release:</p>
+            <ul>
+              <li>Engagement status †’ Completed</li>
+              <li>Deposit balance †’ Zero</li>
+              <li>Platform role ends</li>
+            </ul>
+            <p>Engagement history remains accessible for reference and compliance.</p>
+          </div>
+        </section>
+
+        {/* Service Expert Dashboard */}
+        <section className="dashboard-section">
+          <h className="section-title"> SERVICE EXPERT DASHBOARD (Post-Activation Control Center)</h>
+          <p className="principle-text">Core mindset for expert: "I'm visible, protected, and paid only when milestones are approved."</p>
+          
+          <h className="sub-section-title"> DASHBOARD STRUCTURE (TOP †’ BOTTOM)</h>
+          
+          <div className="dashboard-item">
+            <h> HEADER SNAPSHOT (AT A GLANCE)</h>
+            <p><strong>Purpose:</strong> Instant clarity & motivation</p>
+            <p><strong>Metric cards</strong></p>
+            <ul>
+              <li>Active Engagements (e.g.  Active)</li>
+              <li>Pending Actions (e.g.  Deposit release pending approval)</li>
+              <li>Deposits Released (‚¹ released till date)</li>
+              <li>Upcoming Discussions (Scheduled calls)</li>
+            </ul>
+          </div>
+
+          <div className="dashboard-item">
+            <h>  PRIMARY NAVIGATION (ROLE-SPECIFIC)</h>
+            <p>Minimal. No clutter.</p>
+            <ul>
+              <li>My Profile</li>
+              <li>Discussions</li>
+              <li>Engagements</li>
+              <li>Deposits</li>
+              <li>Settings</li>
+            </ul>
+            <p><strong>Nothing about:</strong></p>
+            <ul>
+              <li> tasks</li>
+              <li> timelines</li>
+              <li> invoices</li>
+            </ul>
+          </div>
+
+          <div className="dashboard-item">
+            <h>  MY PROFILE (VISIBILITY CONTROL)</h>
+            <p><strong>Purpose:</strong> Discovery & credibility</p>
+            <p><strong>What expert sees</strong></p>
+            <ul>
+              <li>Profile completeness</li>
+              <li>Approved service categories</li>
+              <li>Visibility status (Active / Under Review)</li>
+            </ul>
+            <p><strong>Actions</strong></p>
+            <ul>
+              <li>Edit profile (non-critical fields)</li>
+              <li>Update portfolio</li>
+              <li>View how profile appears to businesses</li>
+            </ul>
+            <p>š Compliance fields locked after approval (admin-only edits)</p>
+          </div>
+
+          <div className="dashboard-item">
+            <h>  DISCUSSIONS (PRE-HIRING)</h>
+            <p><strong>Purpose:</strong> Alignment before commitment</p>
+            <p><strong>Each discussion card shows:</strong></p>
+            <ul>
+              <li>Business name</li>
+              <li>Service category</li>
+              <li>Purpose</li>
+              <li>Status:
+                <ul>
+                  <li>Requested</li>
+                  <li>Scheduled</li>
+                  <li>Completed</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Actions</strong></p>
+            <ul>
+              <li>Accept / Reschedule / Decline</li>
+              <li>Join discussion (Jitsi)</li>
+              <li>Mark discussion as completed</li>
+            </ul>
+            <p>‘ Key rule enforced: ‘‰ Quotation cannot be created unless discussion = Completed</p>
+          </div>
+
+          <div className="dashboard-item">
+            <h>  ENGAGEMENTS (POST-HIRING CORE)</h>
+            <p>This is the expert's main work area.</p>
+            <p><strong>Engagement Card Shows:</strong></p>
+            <ul>
+              <li>Business name</li>
+              <li>Service category</li>
+              <li>Engagement status:
+                <ul>
+                  <li>Pending Deposit</li>
+                  <li>Active</li>
+                  <li>Completed</li>
+                </ul>
+              </li>
+              <li>Deposit status</li>
+              <li>Quotation reference ID</li>
+            </ul>
+            <p>Click †’ Engagement Details View</p>
+          </div>
+
+          <div className="dashboard-item">
+            <h> ENGAGEMENT DETAIL VIEW (EXPERT SIDE)</h>
+            <p><strong>A. Engagement Summary (Read-only)</strong></p>
+            <ul>
+              <li>Client name</li>
+              <li>Expert ID</li>
+              <li>Service category</li>
+              <li>Engagement status</li>
+              <li>Start date</li>
+            </ul>
+            
+            <p><strong>B. Quotation Reference (Read-only)</strong></p>
+            <ul>
+              <li>Total engagement value</li>
+              <li>Milestone table:
+                <ul>
+                  <li>Scope</li>
+                  <li>Timeline</li>
+                  <li>% allocation</li>
+                  <li>Deposit amount per milestone</li>
+                </ul>
+              </li>
+            </ul>
+            <p>š This is not editable</p>
+            <p>š This is not a tracker</p>
+            
+            <p><strong>C. Deposit Overview (TRANSPARENCY)</strong></p>
+            <ul>
+              <li>Total deposit held</li>
+              <li>Amount released so far</li>
+              <li>Remaining balance</li>
+            </ul>
+            <p><strong>Visual:</strong></p>
+            <ul>
+              <li>‚¹ Released</li>
+              <li>‚¹ Held</li>
+            </ul>
+            <p>‘ Experts know where they stand financially without handling money.</p>
+            
+            <p><strong>D. REQUEST DEPOSIT RELEASE (CORE ACTION)</strong></p>
+            <p>This is the expert's most important button</p>
+            <p>¡ Request Deposit Release</p>
+            <p>When clicked:</p>
+            <p><strong>Expert selects:</strong></p>
+            <ul>
+              <li>Milestone reference (M / M / etc.)</li>
+              <li>Completion Note (mandatory, short)</li>
+              <li>Optional attachment / link</li>
+            </ul>
+            <p>š Milestones shown here are a reference for deposit release only.</p>
+            <p>MarTechAdda does not track work progress or delivery.</p>
+            <p><strong>Status becomes:</strong> "Deposit release awaiting client approval"</p>
+            
+            <p><strong>E. Client Decision Status (READ-ONLY)</strong></p>
+            <p>Expert sees:</p>
+            <ul>
+              <li>Approved †’ Released</li>
+              <li>Revision Requested †’ Action needed</li>
+              <li>Concern Raised †’ On hold (admin visible)</li>
+            </ul>
+            <p>No arguing. No auto-escalation. Platform stays neutral.</p>
+          </div>
+
+          <div className="dashboard-item">
+            <h>  Deposits Releases (FINANCIAL HISTORY €“ READ ONLY)</h>
+            <p><strong>Purpose:</strong> Trust & audit trail</p>
+            <p><strong>Table view:</strong></p>
+            <ul>
+              <li>Engagement ID</li>
+              <li>Client name</li>
+              <li>Milestone</li>
+              <li>Deposit %</li>
+              <li>Amount released</li>
+              <li>Date</li>
+            </ul>
+            <p><strong> No withdrawal button</strong></p>
+            <p><strong> No invoice upload</strong></p>
+            <p><strong> No tax display</strong></p>
+            <p>MarTechAdda handles release execution.</p>
+          </div>
+
+          <div className="dashboard-item">
+            <h>  SETTINGS</h>
+            <p><strong>Account</strong></p>
+            <ul>
+              <li>Login credentials</li>
+            </ul>
+            <p><strong>Preferences</strong></p>
+            <ul>
+              <li>Notification preferences</li>
+              <li>Availability toggle</li>
+            </ul>
+            <p><strong>Support</strong></p>
+            <ul>
+              <li>Expert ID</li>
+              <li>Contact support</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* What Not to Show */}
+        <section className="exclusion-section">
+          <h className="section-title"> WHAT YOU SMARTLY DO NOT SHOW (CRITICAL) €“ Not a part of flow just overview and reference purpose only</h>
+          <ul>
+            <li> No progress bars</li>
+            <li> No task lists</li>
+            <li> No deadlines enforcement</li>
+            <li> No client payment handling</li>
+            <li> No messaging overload</li>
+          </ul>
+          <p>This protects:</p>
+          <ul>
+            <li>You (platform)</li>
+            <li>Expert</li>
+            <li>Client</li>
+          </ul>
+        </section>
+
+        {/* Expert Dashboard Flow */}
+        <section className="flow-section">
+          <h className="section-title"> EXPERT DASHBOARD FLOW (MENTAL MODEL)</h>
+          <p>Be Discovered †’ Discuss †’ Quote †’ Get Hired †’ Deliver †’ Request Release †’ Get Paid (via deposit release)</p>
+        </section>
+
+        {/* Final Verdict */}
+        <section className="final-section">
+          <h className="section-title"> FINAL VERDICT</h>
+          <p>Your Service Expert Dashboard:</p>
+          <ul>
+            <li> Matches quotation + deposit logic</li>
+            <li> Avoids project-management liability</li>
+            <li> Encourages milestone discipline</li>
+            <li> Works with single current account (MVP-safe)</li>
+            <li> Scales cleanly to escrow later</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  )
+}
+
+export default ServiceExpert

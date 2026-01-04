@@ -1,0 +1,189 @@
+@import '../styles/theme.css';
+
+.innovationProof {
+  padding: var(--spacing-4xl) 0;
+  background: linear-gradient(to bottom, var(--color-white) 0%, var(--color-grey-50) 50%, var(--color-white) 100%);
+  position: relative;
+  border-top: 2px solid var(--color-grey-100);
+  margin-top: var(--spacing-2xl);
+}
+
+.innovationProof::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, transparent, var(--color-grey-300), transparent);
+}
+
+.statsBackgroundGradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(255, 107, 53, 0.02) 0%, 
+    rgba(45, 134, 89, 0.02) 50%,
+    rgba(255, 107, 53, 0.02) 100%);
+  pointer-events: none;
+}
+
+.container {
+  max-width: var(--container-max-width);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.statBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-grey-200);
+  border-radius: var(--border-radius-lg);
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.statBlock:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-grey-300);
+}
+
+.statBlock.theme-green {
+  border-color: var(--color-green);
+  background-color: var(--color-green-light);
+  border-width: 2px;
+}
+
+.statBlock.theme-orange {
+  border-color: var(--color-orange);
+  background-color: var(--color-orange-light);
+  border-width: 2px;
+}
+
+.statBlock.theme-green:hover {
+  border-color: var(--color-green-hover);
+  box-shadow: 0 4px 12px rgba(45, 134, 89, 0.2);
+}
+
+.statBlock.theme-orange:hover {
+  border-color: var(--color-orange-hover);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.2);
+}
+
+.statBadge {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--color-grey-100);
+  border-radius: var(--border-radius-xl);
+  font-size: var(--font-size-xs);
+  color: var(--color-grey-600);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statBlock.theme-green .statBadge {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+.statBlock.theme-orange .statBadge {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-grey-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.statBlock.theme-green .iconWrapper {
+  background-color: var(--color-white);
+}
+
+.statBlock.theme-orange .iconWrapper {
+  background-color: var(--color-white);
+}
+
+.statIcon {
+  font-size: 24px;
+  color: var(--color-grey-600);
+  stroke-width: 2;
+}
+
+.statBlock.theme-green .statIcon {
+  color: var(--color-green);
+}
+
+.statBlock.theme-orange .statIcon {
+  color: var(--color-orange);
+}
+
+.statContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.statNumber {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-900);
+  line-height: var(--line-height-tight);
+}
+
+.statLabel {
+  font-size: var(--font-size-base);
+  color: var(--color-grey-700);
+  font-weight: var(--font-weight-semibold);
+}
+
+.statDescription {
+  font-size: var(--font-size-sm);
+  color: var(--color-grey-600);
+  line-height: var(--line-height-normal);
+  margin-top: var(--spacing-xs);
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .innovationProof {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .statNumber {
+    font-size: var(--font-size-3xl);
+  }
+}

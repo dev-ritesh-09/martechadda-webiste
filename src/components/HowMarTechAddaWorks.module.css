@@ -1,0 +1,778 @@
+@import '../styles/theme.css';
+
+.howItWorks {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section - Polished */
+.hero {
+  padding: 120px 0 80px;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-grey-200);
+  text-align: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.heroBackgroundPattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 15% 25%, rgba(255, 107, 53, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 85% 75%, rgba(45, 134, 89, 0.04) 0%, transparent 50%),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(255, 107, 53, 0.015) 40px,
+      rgba(255, 107, 53, 0.015) 41px
+    );
+  background-size: 80px 80px;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heroBackgroundGradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(255, 107, 53, 0.02) 0%, 
+    rgba(45, 134, 89, 0.02) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heroBackgroundShape1 {
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, var(--color-orange-light) 0%, transparent 100%);
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(60px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.heroBackgroundShape2 {
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(135deg, transparent 0%, var(--color-green-light) 100%);
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(60px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.heroContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  position: relative;
+  z-index: 1;
+}
+
+.heroTitle {
+  font-size: 48px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-900);
+  margin: 0 0 32px 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.heroSubtitle {
+  font-size: 20px;
+  color: var(--color-grey-600);
+  margin: 0 auto 0;
+  line-height: var(--line-height-relaxed);
+  font-weight: var(--font-weight-regular);
+  max-width: 700px;
+}
+
+/* Flow Diagram - 4-Step Mini Timeline */
+.flowDiagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 64px;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.flowStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  transition: all 200ms ease;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.flowStep:hover .flowCircle {
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+  transform: translateY(-2px);
+}
+
+.flowStep:hover .stepIcon {
+  color: var(--color-white);
+  opacity: 1;
+}
+
+.flowStep:hover .stepNumber {
+  opacity: 0;
+}
+
+.flowStep:hover .flowLabel {
+  color: var(--color-orange);
+}
+
+.flowStep:hover ~ .flowStep .flowConnector,
+.flowStep:hover .flowConnector {
+  border-color: var(--color-orange);
+}
+
+.flowCircle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var(--color-orange);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 200ms ease;
+}
+
+.stepNumber {
+  position: absolute;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  color: var(--color-orange);
+  transition: opacity 200ms ease;
+}
+
+.stepIcon {
+  font-size: 24px;
+  color: var(--color-orange);
+  opacity: 0;
+  transition: all 200ms ease;
+  stroke-width: 2;
+}
+
+.flowStep:hover .stepIcon {
+  opacity: 1;
+  color: var(--color-white);
+}
+
+.flowLabel {
+  font-size: var(--font-size-sm);
+  color: var(--color-grey-600);
+  font-weight: var(--font-weight-bold);
+  transition: color 200ms ease;
+  text-align: center;
+}
+
+.flowConnector {
+  width: 48px;
+  height: 2px;
+  border-top: 2px dotted var(--color-grey-300);
+  flex-shrink: 0;
+  transition: border-color 200ms ease;
+  margin: 0;
+}
+
+/* Main Section with Tabs */
+.mainSection {
+  padding: 96px 0;
+  background-color: var(--color-white);
+}
+
+.tabsWrapper {
+  width: 100%;
+}
+
+/* Tab Control */
+.tabControl {
+  position: relative;
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--color-grey-200);
+  margin-bottom: var(--spacing-3xl);
+  background-color: var(--color-white);
+}
+
+.tabButton {
+  flex: 1;
+  padding: var(--spacing-lg) var(--spacing-xl);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-grey-600);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms ease;
+  position: relative;
+  z-index: 1;
+}
+
+.tabButton:hover {
+  color: var(--color-grey-900);
+  background-color: var(--color-grey-50);
+}
+
+.tabButton.active {
+  color: var(--color-orange);
+}
+
+.tabIndicator {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background-color: var(--color-orange);
+  transition: transform 250ms ease;
+  z-index: 2;
+}
+
+.tabIndicator.indicatorLeft {
+  transform: translateX(0);
+}
+
+.tabIndicator.indicatorRight {
+  transform: translateX(100%);
+}
+
+.tabContent {
+  width: 100%;
+  min-height: 400px;
+}
+
+.stepsContainer {
+  padding: 0;
+}
+
+/* Vertical Stepper */
+.verticalStepper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.verticalStep {
+  position: relative;
+}
+
+.stepCard {
+  background-color: var(--color-white);
+  border-radius: 16px;
+  padding: var(--spacing-xl);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 250ms ease;
+  cursor: pointer;
+  border: 1px solid var(--color-grey-200);
+}
+
+.stepCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border-color: var(--color-grey-300);
+}
+
+.stepHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  position: relative;
+}
+
+.stepLabel {
+  position: absolute;
+  top: -8px;
+  left: 80px;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--color-grey-100);
+  border-radius: var(--border-radius-xl);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-700);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+.stepCircle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 250ms ease;
+  position: relative;
+  z-index: 1;
+}
+
+.stepCircle.filled.orange {
+  background-color: var(--color-orange);
+  border: 2px solid var(--color-orange);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.stepCircle.outline.orange {
+  background-color: transparent;
+  border: 2px solid var(--color-orange);
+}
+
+.stepCircle.filled.green {
+  background-color: var(--color-green);
+  border: 2px solid var(--color-green);
+  box-shadow: 0 4px 12px rgba(45, 134, 89, 0.3);
+}
+
+.stepCircle.outline.green {
+  background-color: transparent;
+  border: 2px solid var(--color-green);
+}
+
+.stepCard:hover .stepCircle {
+  transform: scale(1.1);
+}
+
+.stepCard:hover .stepCircle.filled.orange,
+.stepCard:hover .stepCircle.outline.orange {
+  box-shadow: 0 6px 16px rgba(255, 107, 53, 0.4);
+}
+
+.stepCard:hover .stepCircle.filled.green,
+.stepCard:hover .stepCircle.outline.green {
+  box-shadow: 0 6px 16px rgba(45, 134, 89, 0.4);
+}
+
+.stepIcon {
+  font-size: 28px;
+  stroke-width: 2.5;
+  transition: all 250ms ease;
+}
+
+.stepCircle.filled.orange .stepIcon,
+.stepCircle.filled.green .stepIcon {
+  color: var(--color-white);
+}
+
+.stepCircle.outline.orange .stepIcon {
+  color: var(--color-orange);
+}
+
+.stepCircle.outline.green .stepIcon {
+  color: var(--color-green);
+}
+
+.stepContent {
+  flex: 1;
+  padding-top: var(--spacing-xs);
+}
+
+.stepTitle {
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-900);
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.stepDescription {
+  font-size: var(--font-size-base);
+  color: var(--color-grey-600);
+  line-height: 1.5;
+  margin: 0;
+  font-weight: var(--font-weight-regular);
+}
+
+/* Vertical Connector */
+.verticalConnector {
+  position: absolute;
+  left: 32px;
+  top: 100%;
+  width: 2px;
+  height: 40px;
+  border-left: 2px dotted var(--color-grey-300);
+  z-index: 0;
+  margin-top: var(--spacing-xs);
+}
+
+.verticalStep:hover .verticalConnector {
+  border-left-color: var(--color-orange);
+}
+
+.verticalStep:hover ~ .verticalStep .verticalConnector {
+  border-left-color: var(--color-orange);
+}
+
+.stepperBackground {
+  background: linear-gradient(135deg, 
+    var(--color-grey-50) 0%, 
+    var(--color-white) 50%, 
+    var(--color-grey-50) 100%);
+  border-left: 4px solid var(--color-orange);
+  border-radius: var(--border-radius-xl);
+  padding: var(--spacing-3xl) var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+.stepperBackground::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, 
+    transparent 0%, 
+    var(--color-orange) 20%, 
+    var(--color-green) 80%, 
+    transparent 100%);
+}
+
+.stepperBackground::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, 
+    var(--color-orange) 0%, 
+    var(--color-green) 100%);
+}
+
+/* Trust Section */
+.trustSection {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-grey-100);
+}
+
+.trustTitle {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-900);
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.trustSubtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-grey-600);
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: var(--spacing-xl);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.trustCard:nth-child(3) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: calc(50% - var(--spacing-xl) / 2);
+}
+
+.trustCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-grey-200);
+  border-radius: var(--border-radius-lg);
+  transition: all var(--transition-base);
+  cursor: default;
+}
+
+.trustCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-orange);
+}
+
+.trustIconWrapper {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-orange-light);
+  border-radius: 50%;
+  transition: all var(--transition-base);
+}
+
+.trustCard:hover .trustIconWrapper {
+  background-color: var(--color-orange);
+  transform: scale(1.05);
+}
+
+.trustCard:hover .trustIcon {
+  color: var(--color-white);
+}
+
+.trustIcon {
+  width: 28px;
+  height: 28px;
+  color: var(--color-orange);
+  transition: color var(--transition-base);
+}
+
+.trustCardTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-grey-900);
+  margin-bottom: var(--spacing-sm);
+  line-height: var(--line-height-normal);
+  display: block;
+}
+
+.trustCardDescription {
+  font-size: var(--font-size-base);
+  color: var(--color-grey-600);
+  line-height: var(--line-height-relaxed);
+  display: block;
+  margin-top: var(--spacing-xs);
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--color-white);
+}
+
+.ctaContent {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl);
+  background-color: var(--color-grey-50);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-grey-200);
+}
+
+.ctaIconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: radial-gradient(circle, var(--color-orange-light) 0%, var(--color-white) 70%);
+  border-radius: 50%;
+  margin-bottom: var(--spacing-md);
+  position: relative;
+}
+
+.ctaIconWrapper::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--color-orange-light) 0%, transparent 70%);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.ctaIcon {
+  width: 28px;
+  height: 28px;
+  color: var(--color-orange);
+}
+
+.ctaTitle {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-900);
+  margin-bottom: var(--spacing-md);
+}
+
+.ctaDescription {
+  font-size: var(--font-size-base);
+  color: var(--color-grey-600);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-lg);
+}
+
+.ctaButton {
+  margin-top: var(--spacing-md);
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .trustGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    max-width: 100%;
+  }
+  
+  .trustCard:nth-child(3) {
+    grid-column: 1;
+    max-width: 100%;
+  }
+  
+  .trustCard {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .stepperBackground {
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
+  
+  .verticalStepper {
+    gap: 32px;
+  }
+  
+  .stepCard {
+    padding: var(--spacing-lg);
+  }
+  
+  .stepCircle {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .stepIcon {
+    font-size: 24px;
+  }
+  
+  .stepTitle {
+    font-size: var(--font-size-lg);
+  }
+  
+  .stepDescription {
+    font-size: var(--font-size-sm);
+  }
+  
+  .verticalConnector {
+    left: 28px;
+    top: calc(56px + var(--spacing-lg));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 0 60px;
+  }
+  
+  .heroTitle {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  
+  .heroSubtitle {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  .flowDiagram {
+    gap: var(--spacing-md);
+    margin-top: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flowConnector {
+    width: 32px;
+  }
+  
+  .flowCircle {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .stepIcon {
+    font-size: 20px;
+  }
+  
+  .stepNumber {
+    font-size: var(--font-size-base);
+  }
+  
+  .flowLabel {
+    font-size: var(--font-size-xs);
+  }
+  
+  .mainSection {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .stepperBackground {
+    padding: var(--spacing-lg);
+    border-left-width: 3px;
+  }
+  
+  .trustSection {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .trustTitle {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .trustCard {
+    padding: var(--spacing-lg);
+  }
+  
+  .ctaContent {
+    padding: var(--spacing-xl);
+  }
+  
+  .ctaTitle {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .ctaIconWrapper {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .ctaIcon {
+    width: 24px;
+    height: 24px;
+  }
+}

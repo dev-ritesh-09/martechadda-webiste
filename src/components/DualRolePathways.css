@@ -1,0 +1,85 @@
+.dual-role-section {
+  padding: 80px 64px;
+  background: #FFFFFF;
+}
+
+.dual-role-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.pathway-card {
+  background: #FFFFFF;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.2s ease;
+  border: 1px solid #E2E8F0;
+}
+
+.pathway-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+  border-color: #3B82F6;
+}
+
+.pathway-headline {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2A394E;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.pathway-description {
+  font-size: 16px;
+  color: #64748B;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.pathway-cta {
+  background: #1E3A8A;
+  color: #FFFFFF;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  letter-spacing: 0.05em;
+}
+
+.pathway-cta:hover {
+  background: #3B82F6;
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .dual-role-section {
+    padding: 80px 24px;
+  }
+  
+  .dual-role-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .pathway-card {
+    padding: 24px;
+  }
+  
+  .pathway-headline {
+    font-size: 18px;
+  }
+  
+  .pathway-description {
+    font-size: 14px;
+  }
+}
