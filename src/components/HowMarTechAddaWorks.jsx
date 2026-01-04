@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FiSearch, FiMessageCircle, FiFileText, FiCheckCircle } from 'react-icons/fi'
 import Card from './ui/Card'
 import Button from './ui/Button'
+import SectionWrapper from './SectionWrapper'
 import { 
   HandshakeIcon, 
   UserIcon,
@@ -189,8 +190,9 @@ const HowMarTechAddaWorks = () => {
 
   return (
     <div className={styles.howItWorks}>
-      <section className={styles.hero}>
-        <div className={styles.heroContainer}>
+      <SectionWrapper sectionType="how-it-works-hero">
+        <section className={styles.hero}>
+          <div className={styles.heroContainer}>
           <h1 className={styles.heroTitle}>How It Works</h1>
           <p className={styles.heroSubtitle}>
             A simple, transparent process designed for clarity before commitment
@@ -229,35 +231,39 @@ const HowMarTechAddaWorks = () => {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
-      <section className={styles.mainSection}>
-        <div className={`container ${styles.container}`}>
-          <div className={styles.tabsWrapper}>
-            <div className={styles.tabControl}>
-              <button
-                className={`${styles.tabButton} ${activeTab === 0 ? styles.active : ''}`}
-                onClick={() => setActiveTab(0)}
-              >
-                For Businesses
-              </button>
-              <button
-                className={`${styles.tabButton} ${activeTab === 1 ? styles.active : ''}`}
-                onClick={() => setActiveTab(1)}
-              >
-                For Marketing Experts
-              </button>
-              <div className={`${styles.tabIndicator} ${activeTab === 0 ? styles.indicatorLeft : styles.indicatorRight}`}></div>
-            </div>
-            <div className={styles.tabContent}>
-              {activeTab === 0 ? businessContent : expertContent}
+      <SectionWrapper sectionType={activeTab === 0 ? "businesses-stepper" : "experts-stepper"}>
+        <section className={styles.mainSection}>
+          <div className={`container ${styles.container}`}>
+            <div className={styles.tabsWrapper}>
+              <div className={styles.tabControl}>
+                <button
+                  className={`${styles.tabButton} ${activeTab === 0 ? styles.active : ''}`}
+                  onClick={() => setActiveTab(0)}
+                >
+                  For Businesses
+                </button>
+                <button
+                  className={`${styles.tabButton} ${activeTab === 1 ? styles.active : ''}`}
+                  onClick={() => setActiveTab(1)}
+                >
+                  For Marketing Experts
+                </button>
+                <div className={`${styles.tabIndicator} ${activeTab === 0 ? styles.indicatorLeft : styles.indicatorRight}`}></div>
+              </div>
+              <div className={styles.tabContent}>
+                {activeTab === 0 ? businessContent : expertContent}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
-      <section className={styles.trustSection}>
-        <div className={`container ${styles.container}`}>
+      <SectionWrapper sectionType="what-we-dont-do">
+        <section className={styles.trustSection}>
+          <div className={`container ${styles.container}`}>
           <h2 className={styles.trustTitle}>What We Don't Do</h2>
           <p className={styles.trustSubtitle}>
             Our commitment to neutrality and transparency
@@ -277,10 +283,12 @@ const HowMarTechAddaWorks = () => {
             })}
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
-      <section className={styles.ctaSection}>
-        <div className={`container ${styles.container}`}>
+      <SectionWrapper sectionType="how-it-works-cta">
+        <section className={styles.ctaSection}>
+          <div className={`container ${styles.container}`}>
           <div className={styles.ctaContent}>
             <div className={styles.ctaIconWrapper}>
               <LightbulbIcon className={styles.ctaIcon} />
@@ -299,7 +307,8 @@ const HowMarTechAddaWorks = () => {
             </Button>
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FiSearch, FiBriefcase, FiTarget, FiUsers, FiShield, FiCheckCircle, FiStar, FiMessageCircle } from 'react-icons/fi'
 import Button from './ui/Button'
+import SectionWrapper from './SectionWrapper'
 import styles from './Hero.module.css'
 
 const Hero = () => {
@@ -44,10 +45,11 @@ const Hero = () => {
   ]
 
   return (
-    <section className={styles.hero}>
-      <div className={styles.heroBackgroundPattern}></div>
-      <div className={styles.heroBackgroundShape}></div>
-      <div className={`container ${styles.heroContainer}`}>
+    <SectionWrapper sectionType="hero-dashboard">
+      <section className={styles.hero}>
+        <div className={styles.heroBackgroundPattern}></div>
+        <div className={styles.heroBackgroundShape}></div>
+        <div className={`container ${styles.heroContainer}`}>
         <div className={styles.heroContent}>
           <div className={styles.heroLeft}>
             <h1 className={styles.headline}>
@@ -167,7 +169,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </SectionWrapper>
   )
 }
 

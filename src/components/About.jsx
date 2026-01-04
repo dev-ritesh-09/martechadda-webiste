@@ -16,6 +16,7 @@ import {
 } from 'react-icons/fi'
 import Card from './ui/Card'
 import Button from './ui/Button'
+import SectionWrapper from './SectionWrapper'
 import styles from './About.module.css'
 
 const About = () => {
@@ -118,9 +119,10 @@ const About = () => {
   return (
     <div className={styles.about}>
       {/* Hero Section */}
-      <section className={`${styles.hero} ${styles.fadeUp}`} ref={addToRefs}>
-        <div className={styles.heroBackground}></div>
-        <div className={`container ${styles.container}`}>
+      <SectionWrapper sectionType="about-hero">
+        <section className={`${styles.hero} ${styles.fadeUp}`} ref={addToRefs}>
+          <div className={styles.heroBackground}></div>
+          <div className={`container ${styles.container}`}>
           <div className={styles.heroContent}>
             <div className={styles.heroLeft}>
               <div className={styles.accentLine}></div>
@@ -163,14 +165,17 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
       {/* Why We Exist */}
-      <section className={`${styles.section} ${styles.fadeUp}`} ref={addToRefs}>
-        <div className={`container ${styles.container}`}>
+      <SectionWrapper sectionType="why-we-exist">
+        <section className={`${styles.section} ${styles.whyWeExistSection} ${styles.fadeUp}`} ref={addToRefs}>
+          <div className={styles.whyWeExistBackground}></div>
+          <div className={`container ${styles.container}`}>
           <div className={styles.sectionHeader}>
             <span className={styles.sectionLabel}>The Problem</span>
-            <h2 className={styles.sectionTitle}>Why We Exist</h2>
+            <h2 className={`${styles.sectionTitle} ${styles.whyWeExistTitle}`}>Why We Exist</h2>
           </div>
           <div className={styles.twoColumn}>
             <div className={styles.leftColumn}>
@@ -206,12 +211,14 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
       {/* What We're Building */}
-      <section className={`${styles.section} ${styles.sectionAlt} ${styles.fadeUp}`} ref={addToRefs}>
-        <div className={`container ${styles.container}`}>
-          <h2 className={styles.sectionTitle}>What We're Building</h2>
+      <SectionWrapper sectionType="what-were-building">
+        <section className={`${styles.section} ${styles.sectionAlt} ${styles.fadeUp}`} ref={addToRefs}>
+          <div className={`container ${styles.container}`}>
+          <h2 className={`${styles.sectionTitle} ${styles.centeredTitle}`}>What We're Building</h2>
           <div className={styles.featuresGrid}>
             {features.map((feature, index) => {
               const IconComponent = feature.icon
@@ -227,12 +234,14 @@ const About = () => {
             })}
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
       {/* Our Principles */}
-      <section className={`${styles.section} ${styles.principlesSection} ${styles.fadeUp}`} ref={addToRefs}>
-        <div className={styles.principlesBackground}></div>
-        <div className={`container ${styles.container}`}>
+      <SectionWrapper sectionType="principles">
+        <section className={`${styles.section} ${styles.principlesSection} ${styles.fadeUp}`} ref={addToRefs}>
+          <div className={styles.principlesBackground}></div>
+          <div className={`container ${styles.container}`}>
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>Our Principles</h2>
             <p className={styles.sectionCaption}>
@@ -254,12 +263,14 @@ const About = () => {
             })}
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
       {/* Our Role in the Ecosystem */}
-      <section className={`${styles.section} ${styles.fadeUp}`} ref={addToRefs}>
-        <div className={`container ${styles.container}`}>
-          <h2 className={styles.sectionTitle}>Our Role in the Ecosystem</h2>
+      <SectionWrapper sectionType="ecosystem-role">
+        <section className={`${styles.section} ${styles.fadeUp}`} ref={addToRefs}>
+          <div className={`container ${styles.container}`}>
+          <h2 className={`${styles.sectionTitle} ${styles.centeredTitle}`}>Our Role in the Ecosystem</h2>
           <div className={styles.ecosystemDiagram}>
             <div className={styles.ecosystemNode}>
               <div className={styles.nodeCircle}>
@@ -303,27 +314,30 @@ const About = () => {
             MarTechAdda sits in the middle as a neutral layer—no agency markups, no paid rankings.
           </p>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
       {/* Closing CTA */}
-      <section className={`${styles.ctaSection} ${styles.fadeUp}`} ref={addToRefs}>
-        <div className={styles.ctaBackground}></div>
-        <div className={`container ${styles.container}`}>
+      <SectionWrapper sectionType="about-cta">
+        <section className={`${styles.ctaSection} ${styles.fadeUp}`} ref={addToRefs}>
+          <div className={styles.ctaBackground}></div>
+          <div className={`container ${styles.container}`}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>See MarTechAdda in action</h2>
             <div className={styles.ctaButtons}>
-              <Button variant="primary" size="lg" as={Link} to="/" className={styles.ctaButton}>
+              <Button variant="primary" size="md" as={Link} to="/" className={styles.ctaButton}>
                 <FiSearch className={styles.buttonIcon} />
                 Explore Marketing Experts
               </Button>
-              <Button variant="outline" size="lg" as={Link} to="/how-it-works" className={styles.ctaButton}>
+              <Button variant="outline" size="md" as={Link} to="/how-it-works" className={styles.ctaButton}>
                 See How It Works
                 <FiArrowRight className={styles.buttonIcon} />
               </Button>
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
     </div>
   )
 }

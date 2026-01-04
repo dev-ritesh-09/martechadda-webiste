@@ -1,6 +1,7 @@
 import React from 'react'
 import { FiBriefcase, FiBarChart2, FiUser, FiStar, FiCheckCircle } from 'react-icons/fi'
 import Button from './ui/Button'
+import SectionWrapper from './SectionWrapper'
 import styles from './DualRolePathways.module.css'
 
 // Reusable AudienceCard component
@@ -60,8 +61,9 @@ const DualRolePathways = () => {
   ]
 
   return (
-    <section className={styles.dualPaths}>
-      <div className={`container ${styles.container}`}>
+    <SectionWrapper sectionType="dual-pathways">
+      <section className={styles.dualPaths}>
+        <div className={`container ${styles.container}`}>
         <div className={styles.grid}>
           <AudienceCard
             label="Service Seekers"
@@ -86,7 +88,8 @@ const DualRolePathways = () => {
           />
         </div>
       </div>
-    </section>
+      </section>
+    </SectionWrapper>
   )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { FiShield, FiAward, FiCheckCircle, FiMessageSquare, FiTool } from 'react-icons/fi'
+import SectionWrapper from './SectionWrapper'
 import styles from './Solution.module.css'
 
 // Reusable SolutionCard component
@@ -45,8 +46,9 @@ const Solution = () => {
   ]
 
   return (
-    <section className={styles.solution}>
-      <div className={`container ${styles.container}`}>
+    <SectionWrapper sectionType="solution-cards">
+      <section className={styles.solution}>
+        <div className={`container ${styles.container}`}>
         <div className={styles.titleSection}>
           <div className={styles.titleIcon}>
             <FiTool className={styles.titleIconSvg} />
@@ -66,7 +68,8 @@ const Solution = () => {
           ))}
         </div>
       </div>
-    </section>
+      </section>
+    </SectionWrapper>
   )
 }
 

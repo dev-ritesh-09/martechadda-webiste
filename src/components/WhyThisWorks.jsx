@@ -4,6 +4,7 @@ import { MegaphoneIcon } from './Icons'
 import Card from './ui/Card'
 import Button from './ui/Button'
 import Chip from './ui/Chip'
+import SectionWrapper from './SectionWrapper'
 import styles from './WhyThisWorks.module.css'
 
 const WhyThisWorks = () => {
@@ -48,9 +49,10 @@ const WhyThisWorks = () => {
   return (
     <div className={styles.whyThisWorks}>
       {/* Hero Block */}
-      <section className={styles.hero}>
-        <div className={styles.heroBackground}>
-          <svg className={styles.decisionFlow} viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <SectionWrapper sectionType="why-this-works-hero">
+        <section className={styles.hero}>
+          <div className={styles.heroBackground}>
+            <svg className={styles.decisionFlow} viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
             {/* Decision flow nodes and branches - subtle background illustration */}
             <defs>
               <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -88,11 +90,13 @@ const WhyThisWorks = () => {
             The problem isn't marketing talent. It's how hiring decisions are made.
           </h1>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
       {/* Core Insight Section */}
-      <section className={styles.coreInsightSection}>
-        <div className={`container ${styles.container}`}>
+      <SectionWrapper sectionType="core-insight">
+        <section className={styles.coreInsightSection}>
+          <div className={`container ${styles.container}`}>
           <div className={styles.coreInsightGrid}>
             <div className={styles.insightText}>
               <p className={styles.insightParagraph}>
@@ -134,11 +138,13 @@ const WhyThisWorks = () => {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
       {/* Three Structural Issues */}
-      <section className={styles.issuesSection}>
-        <div className={`container ${styles.container}`}>
+      <SectionWrapper sectionType="structural-issues">
+        <section className={styles.issuesSection}>
+          <div className={`container ${styles.container}`}>
           <h2 className={styles.sectionTitle}>Three Structural Issues</h2>
           <div className={styles.issuesGrid}>
             {structuralIssues.map((issue, index) => {
@@ -159,11 +165,13 @@ const WhyThisWorks = () => {
             })}
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
       {/* Areas of Expertise */}
-      <section className={styles.expertiseSection}>
-        <div className={`container ${styles.container}`}>
+      <SectionWrapper sectionType="expertise-areas">
+        <section className={styles.expertiseSection}>
+          <div className={`container ${styles.container}`}>
           <h2 className={styles.sectionTitle}>Areas of Expertise</h2>
           <div className={styles.expertisePills}>
             {expertiseAreas.map((area, index) => {
@@ -177,11 +185,13 @@ const WhyThisWorks = () => {
             })}
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
       {/* Who It's For */}
-      <section className={styles.whoSection}>
-        <div className={`container ${styles.container}`}>
+      <SectionWrapper sectionType="who-its-for">
+        <section className={styles.whoSection}>
+          <div className={`container ${styles.container}`}>
           <h2 className={styles.sectionTitle}>Who It's For</h2>
           <div className={styles.whoGrid}>
             <Card className={styles.whoCard}>
@@ -208,16 +218,19 @@ const WhyThisWorks = () => {
             </Card>
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
       {/* CTA Strip */}
-      <section className={styles.ctaSection}>
-        <div className={`container ${styles.container}`}>
+      <SectionWrapper sectionType="why-this-works-cta">
+        <section className={styles.ctaSection}>
+          <div className={`container ${styles.container}`}>
           <Button variant="primary" size="lg" className={styles.ctaButton}>
             Start with a guided search
           </Button>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
     </div>
   )
 }

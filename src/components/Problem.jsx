@@ -1,6 +1,7 @@
 import React from 'react'
 import { FiAlertCircle, FiClock, FiEye } from 'react-icons/fi'
 import Card from './ui/Card'
+import SectionWrapper from './SectionWrapper'
 import styles from './Problem.module.css'
 
 const Problem = () => {
@@ -23,9 +24,10 @@ const Problem = () => {
   ]
 
   return (
-    <section className={styles.problem}>
-      <div className={styles.problemBackgroundPattern}></div>
-      <div className={`container ${styles.container}`}>
+    <SectionWrapper sectionType="problem-cards">
+      <section className={styles.problem}>
+        <div className={styles.problemBackgroundPattern}></div>
+        <div className={`container ${styles.container}`}>
         <div className={styles.titleSection}>
           <div className={styles.titleIcon}>
             <FiAlertCircle className={styles.titleIconSvg} />
@@ -53,7 +55,8 @@ const Problem = () => {
           })}
         </div>
       </div>
-    </section>
+      </section>
+    </SectionWrapper>
   )
 }
 

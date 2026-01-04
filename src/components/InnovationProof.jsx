@@ -1,5 +1,6 @@
 import React from 'react'
 import { FiUsers, FiLayers, FiShield, FiAward } from 'react-icons/fi'
+import SectionWrapper from './SectionWrapper'
 import styles from './InnovationProof.module.css'
 
 const InnovationProof = () => {
@@ -36,9 +37,10 @@ const InnovationProof = () => {
   ]
 
   return (
-    <section className={styles.innovationProof}>
-      <div className={styles.statsBackgroundGradient}></div>
-      <div className={`container ${styles.container}`}>
+    <SectionWrapper sectionType="stats-strip">
+      <section className={styles.innovationProof}>
+        <div className={styles.statsBackgroundGradient}></div>
+        <div className={`container ${styles.container}`}>
         <div className={styles.statsGrid}>
           {stats.map((stat, index) => {
             const IconComponent = stat.icon
@@ -63,7 +65,8 @@ const InnovationProof = () => {
           })}
         </div>
       </div>
-    </section>
+      </section>
+    </SectionWrapper>
   )
 }
 

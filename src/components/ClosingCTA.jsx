@@ -2,17 +2,19 @@ import React from 'react'
 import { FiSearch, FiUser } from 'react-icons/fi'
 import { HandshakeIcon } from './Icons'
 import Button from './ui/Button'
+import SectionWrapper from './SectionWrapper'
 import styles from './ClosingCTA.module.css'
 
 const ClosingCTA = () => {
   return (
-    <section className={styles.closingCTA}>
-      <div className={styles.backgroundPattern}></div>
-      <div className={styles.backgroundGradient}></div>
-      <div className={styles.illustrationCard}>
-        <HandshakeIcon className={styles.handshakeIcon} />
-      </div>
-      <div className={`container ${styles.container}`}>
+    <SectionWrapper sectionType="closing-cta">
+      <section className={styles.closingCTA}>
+        <div className={styles.backgroundPattern}></div>
+        <div className={styles.backgroundGradient}></div>
+        <div className={styles.illustrationCard}>
+          <HandshakeIcon className={styles.handshakeIcon} />
+        </div>
+        <div className={`container ${styles.container}`}>
         <h2 className={styles.title}>
           Ready to make your next marketing hire a confident one?
         </h2>
@@ -30,7 +32,8 @@ const ClosingCTA = () => {
           </Button>
         </div>
       </div>
-    </section>
+      </section>
+    </SectionWrapper>
   )
 }
 

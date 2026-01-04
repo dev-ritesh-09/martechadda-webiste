@@ -1,6 +1,7 @@
 import React from 'react'
 import { FiFlag, FiTarget, FiFileText, FiArrowRight } from 'react-icons/fi'
 import { MegaphoneIcon } from './Icons'
+import SectionWrapper from './SectionWrapper'
 import styles from './ServiceCategories.module.css'
 
 // Reusable CategoryCard component
@@ -52,8 +53,9 @@ const ServiceCategories = () => {
   ]
 
   return (
-    <section className={styles.serviceCategories}>
-      <div className={`container ${styles.container}`}>
+    <SectionWrapper sectionType="service-categories">
+      <section className={styles.serviceCategories}>
+        <div className={`container ${styles.container}`}>
         <div className={styles.header}>
           <h2 className={styles.sectionTitle}>Choose your marketing expertise</h2>
           <p className={styles.sectionCaption}>Verified specialists in these core areas</p>
@@ -71,7 +73,8 @@ const ServiceCategories = () => {
           ))}
         </div>
       </div>
-    </section>
+      </section>
+    </SectionWrapper>
   )
 }
 

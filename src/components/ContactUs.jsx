@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Card from './ui/Card'
 import Button from './ui/Button'
 import Chip from './ui/Chip'
+import SectionWrapper from './SectionWrapper'
 import { LockIcon, EmailIcon, UserIcon, BriefcaseIcon, MessageCircleIcon, ArrowRightIcon, CheckIcon } from './Icons'
 import styles from './ContactUs.module.css'
 
@@ -413,9 +414,10 @@ const ContactUs = () => {
 
   return (
     <div className={styles.contactUs}>
-      <section className={styles.hero}>
-        <div className={styles.heroBackground}>
-          <svg className={styles.communicationFlow} viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <SectionWrapper sectionType="contact-hero">
+        <section className={styles.hero}>
+          <div className={styles.heroBackground}>
+            <svg className={styles.communicationFlow} viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
             <defs>
               <linearGradient id="communicationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="var(--color-orange)" stopOpacity="0.15" />
@@ -449,11 +451,13 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
-      <section className={styles.formSection}>
-        <div className={`container ${styles.container}`}>
-          <div className={styles.stepperWrapper}>
+      <SectionWrapper sectionType="step-progress">
+        <section className={styles.formSection}>
+          <div className={`container ${styles.container}`}>
+            <div className={styles.stepperWrapper}>
             {steps.map((step, index) => {
               const isActive = index === currentStep
               const isCompleted = index < currentStep
@@ -489,10 +493,12 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
 
-      <section className={styles.otherWays}>
-        <div className={`container ${styles.container}`}>
+      <SectionWrapper sectionType="other-ways">
+        <section className={styles.otherWays}>
+          <div className={`container ${styles.container}`}>
           <h2 className={styles.otherWaysTitle}>Other Ways to Reach Us</h2>
           <div className={styles.contactMethods}>
             <a href="mailto:contact@martechadda.com" className={styles.contactMethod}>
@@ -509,7 +515,8 @@ const ContactUs = () => {
             </a>
           </div>
         </div>
-      </section>
+        </section>
+      </SectionWrapper>
     </div>
   )
 }

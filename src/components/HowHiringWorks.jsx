@@ -1,6 +1,7 @@
 import React from 'react'
 import { FiSearch, FiMessageCircle, FiFileText, FiBriefcase } from 'react-icons/fi'
 import { HandshakeIcon } from './Icons'
+import SectionWrapper from './SectionWrapper'
 import styles from './HowHiringWorks.module.css'
 
 // Reusable ProcessStep component
@@ -55,8 +56,9 @@ const HowHiringWorks = () => {
   ]
 
   return (
-    <section className={styles.howHiringWorks}>
-      <div className={`container ${styles.container}`}>
+    <SectionWrapper sectionType="how-hiring-works">
+      <section className={styles.howHiringWorks}>
+        <div className={`container ${styles.container}`}>
         <div className={styles.header}>
           <div className={styles.titleSection}>
             <div className={styles.titleIcon}>
@@ -83,7 +85,8 @@ const HowHiringWorks = () => {
           ))}
         </div>
       </div>
-    </section>
+      </section>
+    </SectionWrapper>
   )
 }
 
